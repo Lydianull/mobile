@@ -1,0 +1,234 @@
+/*pad*/
+/*第一部分*/
+.one{
+	background:#B2C5CC;
+	height: 5rem;
+}
+.one .nav{
+	display: flex;
+	justify-content:center;
+	text-align: center;
+	padding: .3rem;
+}
+.nav a{
+	display: inline-block;
+	width: .9rem;
+	color:#757575;
+	-webkit-transition:color 1s ease;
+	    -moz-transition:color 1s ease;
+	         -o-transition:color 1s ease;
+	              transition:color 1s ease;
+}
+.nav a:hover{
+	color: #afafaf;
+	cursor: pointer;
+}
+.one .nav-content{
+	display: none;
+}
+.items{
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	height: 3rem;
+}
+.items .item:nth-child(2){
+	margin-top: .4rem;
+}
+.items .item:nth-child(3) input{
+	background: rgb(255,255,255);
+	border:0;
+	margin-top: .5rem;
+	width: 1.4rem;
+	height: .3rem;
+	-webkit-transition:background 1s ease-in-out;
+	    -moz-transition:background 1s ease-in-out;
+	         -o-transition:background 1s ease-in-out;
+	              transition:background 1s ease-in-out;
+}
+.items .item:nth-child(3) input:hover{
+	background: rgb(255,235,205);
+}
+/*第二部分*/
+.two{
+	height: .7rem;
+	display: flex;
+	justify-content:space-around;
+	align-items:center;
+	border-bottom: 1px solid #ccc;
+}
+.two a{
+	color: #bababa;
+	-webkit-transition: 1s ease;
+	    -moz-transition: 1s ease;
+	         -o-transition: 1s ease;
+	              transition: 1s ease;
+}
+.two a:hover{
+	color: #545454;
+}
+/*第三部分*/
+.three{
+	display: flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	padding: 1rem 2rem;
+	
+}
+.three p:first-child{
+	margin-bottom: 15px;
+	font-size: .25rem;
+
+}
+/*第四部分*/
+.four{
+	height: .5rem;
+	background: #f4f4f4;
+	display: flex;
+	padding: 0 .2rem 0 .2rem;
+	justify-content:space-between;
+	align-items:center;
+}
+.four span:first-child{
+	font-size: .2rem;
+	font-family: "宋体";
+}
+.four span:last-child a{
+	color:#000;
+	cursor: pointer;
+}
+/*第五部分*/
+.five{
+	padding: .4rem .2rem;
+	box-sizing:border-box;
+	width: 100%;
+	background: url(../img/bg.jpg) no-repeat center center;
+	background-size:cover;
+}
+.five p{
+	font-size: .3rem;
+}
+.five .pic{
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	align-content:space-around;
+}
+.five .pic a{
+	display: inline-block;
+	width: 32%;
+	overflow: hidden;
+	margin-top: 20px;
+}
+.five .pic a img{
+	width: 100%;
+	height: 100%;
+}
+.five .pic a img:hover{
+	-webkit-transform:scale(2);
+	    -moz-transform:scale(2);
+	         -o-transform:scale(2);
+	              transform:scale(2);
+}
+/*页脚部分*/
+footer{
+	height: .6rem;
+	line-height: .6rem;
+	text-align: center;
+	color:#000;
+	font-size: .2rem;
+	font-weight: bolder;
+}
+/*iphone6*/
+@media screen and (max-width: 375px){
+	/*第一部分*/
+	.one{
+		height: 5.2rem;
+	}
+	.one .nav{
+		display: none;
+	}
+	.items{
+		padding-top: .5rem;
+	}
+	.items .item:nth-child(1){
+		width: 1.2rem;
+		height: 1.2rem;
+	}
+	.items .item:nth-child(1) img{
+		width: 100%;
+		height: 100%;
+	}
+	.items .item:nth-child(2){
+		margin-top: .2rem;
+	}
+	 .items .item:nth-child(3){
+	 	margin-top: 0;
+	 }
+	 .one .nav-content{
+	 	display: block;
+	 }
+	 .nav-content .nav-slider{
+	 	height: .6rem;
+	 	text-align: center;
+	 	line-height: .6rem;
+	 	color: #fff;
+	 	background: #7EA6B1;
+	 	position: relative;
+	 	z-index: 2;
+	 	
+	 }
+
+	 .nav-content .nav-slider .icon{
+	 	position: absolute;
+	 	right: .2rem;
+	 	height: .6rem;
+	 	top: 50%;
+	 	margin-top: -0.07rem;
+	 	border: 1px solid #B2C5CC;
+	 	height: .14rem;
+	 	width: .14rem;
+	 }
+	 .sub-nav{
+	 	position: absolute;
+	 	width: 100%;
+	 	top: -2rem;
+
+	 }
+	 .sub-nav-item{
+	 	height: .4rem;
+	 	text-align: center;
+	 	line-height: .4rem;
+	 	background: #7EA6B1;
+	 }
+	 .sub-nav-item:not(:last-child){
+	 	border-bottom: 1px solid #B2C5CC;
+	 }
+	/*第三部分*/
+	.three{
+		padding: 1rem;
+		
+	}
+	.three p{
+		font-size: 4px;
+	}
+	/*第四部分*/
+	.four{
+		flex-direction:column;
+		justify-content:center;
+		height: .8rem;
+		font-size: .1rem;
+	}
+
+	/*第五部分*/
+	.five .pic{
+		height: 6.5rem;
+	}
+	.five .pic a{
+		width: 48%;
+	}
+	
+	
+}
